@@ -12,19 +12,13 @@ class Migration(migrations.Migration):
 
     operations = [
         migrations.CreateModel(
-            name='Product',
+            name='Category',
             fields=[
                 ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
                 ('name', models.CharField(max_length=200)),
-                ('image', models.ImageField(blank=True, null=True, upload_to='products/')),
-                ('description', models.TextField()),
-                ('price', models.FloatField()),
-                ('amount', models.IntegerField()),
-                ('created_at', models.DateTimeField(auto_now_add=True)),
-                ('updated_at', models.DateTimeField(auto_now=True)),
             ],
             options={
-                'db_table': 'products',
+                'db_table': 'category',
             },
         ),
     ]

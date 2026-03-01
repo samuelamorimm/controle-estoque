@@ -19,7 +19,7 @@ class Category(models.Model):
     def __str__(self):
         return self.name
 
-class Products(models.Model):
+class Product(models.Model):
     name = models.CharField(max_length=200, blank=False, null=False)
     provider = models.ForeignKey(Provider, on_delete=models.CASCADE, related_name='providers')
     category = models.ForeignKey(Category, on_delete=models.CASCADE, related_name='categorys')

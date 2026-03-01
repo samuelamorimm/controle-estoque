@@ -46,7 +46,7 @@ class ProductView(APIView):
                 }, status=status.HTTP_200_OK)
             
             return Response({
-                "message": "Erro ao buscar todos os produtos. Tente novamente em alguns minutos!"
+                "message": "Você não possui produtos cadastrados!"
             }, status=status.HTTP_400_BAD_REQUEST)
         
     #atualizar um produto
@@ -67,7 +67,7 @@ class ProductView(APIView):
             }, status=status.HTTP_200_OK)
         
         return Response({
-            "message": "Erro ao atualizar produto",
+            "message": "Erro ao atualizar produto!",
         }, status=status.HTTP_400_BAD_REQUEST)
     
     #deletar um produto

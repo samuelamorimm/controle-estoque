@@ -46,6 +46,7 @@ INSTALLED_APPS += [
     'products',
     'categorys',
     'suppliers',
+    'movements',
 ]
 
 AUTH_USER_MODEL = 'accounts.CustomUser'
